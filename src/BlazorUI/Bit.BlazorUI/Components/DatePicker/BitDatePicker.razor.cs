@@ -250,7 +250,7 @@ public partial class BitDatePicker
 
         IsOpen = !isOpen;
 
-        if(IsOpen && CurrentValue != null)
+        if (IsOpen && CurrentValue != null)
         {
             CheckCurrentCalendarMatchesCurrentValue();
         }
