@@ -1,13 +1,10 @@
 ﻿@import "fonts.fluent.scss";
-@import "icons.fluent.scss";
-
-@import "../general.scss";
 @import "general.fluent.scss";
-
+@import "icons.fluent.scss";
 
 @import "../../Components/Accordion/BitAccordion.Fluent.scss";
 @import "../../Components/Buttons/BitActionButton/BitActionButton.Fluent.scss";
-@import "../../Components/Buttons/BitButton/BitButton.Fluent.scss";
+@import "../../Components/Buttons/BitButton/BitButton.scss";
 @import "../../Components/Buttons/BitCompoundButton/BitCompoundButton.Fluent.scss";
 @import "../../Components/Buttons/BitIconButton/BitIconButton.Fluent.scss";
 @import "../../Components/Buttons/BitLoadingButton/BitLoadingButton.Fluent.scss";
