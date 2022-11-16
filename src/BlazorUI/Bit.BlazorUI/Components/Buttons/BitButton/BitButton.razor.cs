@@ -97,10 +97,10 @@ public partial class BitButton
                                            : "standard");
 
         ClassBuilder.Register(() => ButtonSize == BitButtonSize.Small
-                                       ? $"{RootElementClass}-sm-{VisualClassRegistrar()}"
+                                       ? $"{RootElementClass}-sm"
                                        : ButtonSize == BitButtonSize.Medium
-                                           ? $"{RootElementClass}-md-{VisualClassRegistrar()}"
-                                           : $"{RootElementClass}-lg-{VisualClassRegistrar()}");
+                                           ? $"{RootElementClass}-md"
+                                           : $"{RootElementClass}-lg");
     }
 
     protected override async Task OnInitializedAsync()

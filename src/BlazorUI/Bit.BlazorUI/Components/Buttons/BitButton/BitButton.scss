@@ -1,20 +1,18 @@
 ﻿@import "../../../Styles/functions.scss";
 
 .bit-btn {
-    &.bit-btn-fluent {
-        position: relative;
-        min-width: rem(64px);
-        border-radius: var(--borderRadius);
-        box-sizing: border-box;
-        font-weight: var(--fontWeightMedium);
-        text-align: center;
-        line-height: 1.75;
-        text-decoration: none;
-        font-family: var(--fontFamily);
-        cursor: pointer;
-    }
+    position: relative;
+    min-width: rem(64px);
+    border-radius: var(--borderRadius);
+    box-sizing: border-box;
+    font-weight: var(--fontWeightMedium);
+    text-align: center;
+    line-height: 1.75;
+    text-decoration: none;
+    font-family: var(--fontFamily);
+    cursor: pointer;
 
-    &.bit-btn-disabled-fluent {
+    &.bit-btn-disabled {
         border: var(--borderWidth) solid var(--grey20);
         color: var(--grey90);
         background: var(--grey20);
@@ -51,17 +49,17 @@
         }
     }
 
-    &.bit-btn-sm-fluent {
+    &.bit-btn-sm {
         padding: rem(4px) rem(10px);
         font-size: rem(13px);
     }
 
-    &.bit-btn-md-fluent {
+    &.bit-btn-md {
         padding: rem(6px) rem(16px);
         font-size: rem(14px);
     }
 
-    &.bit-btn-lg-fluent {
+    &.bit-btn-lg {
         padding: rem(8px) rem(22px);
         font-size: rem(15px);
     }

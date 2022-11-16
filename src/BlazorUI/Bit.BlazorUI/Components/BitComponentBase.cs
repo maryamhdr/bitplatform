@@ -164,9 +164,11 @@ public abstract partial class BitComponentBase : ComponentBase
             .Register(() => visibility == BitComponentVisibility.Hidden ? "visibility:hidden" :
                             visibility == BitComponentVisibility.Collapsed ? "display:none" :
                             string.Empty);
-
         ClassBuilder
             .Register(() => RootElementClass)
+            .Register(() => $"{RootElementClass}-{(IsEnabled ? "enabled" : "disabled")}");
+
+        ClassBuilder
             .Register(() => $"{RootElementClass}-{VisualClassRegistrar()}")
             .Register(() => $"{RootElementClass}-{(IsEnabled ? "enabled" : "disabled")}-{VisualClassRegistrar()}");
         RegisterComponentClasses();
