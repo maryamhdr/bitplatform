@@ -1,0 +1,54 @@
+@page "/theming"
+
+<div class="page-container">
+    <h1 class="page-title">Theming</h1>
+    <section class="page-section">
+        <div class="section-desc">
+            Customize MUI with your theme. You can change the colors, the typography and much more.<br />
+            The theme specifies the color of the components, darkness of the surfaces, level of shadow, appropriate opacity of ink elements, etc.<br />
+            Themes let you apply a consistent tone to your app. It allows you to customize all design aspects of your project in order to meet the specific needs of your business or brand.<br />
+            To promote greater consistency between apps, light and dark theme types are available to choose from. By default, components use the light theme type.
+        </div>
+    </section>
+
+    <section class="page-section">
+        <h2 class="section-title">Theme configuration variables</h2>
+        <div class="section-desc"></div>
+    </section>
+
+    <section class="page-section">
+        <h2 class="section-title">Theme configuration variables</h2>
+        <div class="section-desc"></div>
+    </section>
+
+    <section class="page-section">
+        <h2 class="section-title">Theme configuration variables</h2>
+        <div class="section-desc"></div>
+
+        <ComponentExampleBox Title="BitButton" HTMLSourceCode="@example1HTMLCode" ExampleId="example1">
+            <ExamplePreview>
+                <div class="example-desc">To create a button you can use a BitButton component.</div>
+                <div>
+                    <BitButton IsEnabled="true"
+                               OnClick="() => PrimaryCounter++">
+                        Primary (@PrimaryCounter)
+                    </BitButton>
+                    <BitButton ButtonStyle="BitButtonStyle.Standard"
+                               Style="margin-right: 2px;"
+                               IsEnabled="true"
+                               OnClick="() => StandardCounter++">
+                        Standard (@StandardCounter)
+                    </BitButton>
+                    <BitButton IsEnabled="false"
+                               AllowDisabledFocus="false">
+                        Disabled
+                    </BitButton>
+                    <BitButton Class="label-btn"
+                               IsEnabled="true">
+                        <label>A Text from label element</label>
+                    </BitButton>
+                </div>
+            </ExamplePreview>
+        </ComponentExampleBox>
+    </section>
+</div>

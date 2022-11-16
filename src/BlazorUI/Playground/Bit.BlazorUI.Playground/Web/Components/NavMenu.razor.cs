@@ -125,6 +125,7 @@ public partial class NavMenu
             },
         },
         new BitNavLinkItem { Name= "Icons", Key = "Icons", Url = "/icons"},
+        new BitNavLinkItem { Name= "Theming", Key = "Theming", Url = "/theming"}
     };
 
     private List<BitNavLinkItem> filteredNavLinks;
