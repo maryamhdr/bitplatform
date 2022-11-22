@@ -1,9 +1,7 @@
-﻿@import "../../../Styles/functions.scss";
-
-.bit-btn {
+﻿.bit-btn {
     position: relative;
-    min-width: rem(64px);
-    border-radius: var(--borderRadius);
+    min-width: 64px;
+    border-radius: var(--roundedCorner2);
     box-sizing: border-box;
     font-weight: var(--fontWeightMedium);
     text-align: center;
@@ -50,17 +48,17 @@
     }
 
     &.bit-btn-sm {
-        padding: rem(4px) rem(10px);
-        font-size: rem(13px);
+        padding: 4px 10px;
+        font-size: var(--fontSize12);
     }
 
     &.bit-btn-md {
-        padding: rem(6px) rem(16px);
-        font-size: rem(14px);
+        padding: 6px 16px;
+        font-size: var(--fontSize14);
     }
 
     &.bit-btn-lg {
-        padding: rem(8px) rem(22px);
-        font-size: rem(15px);
+        padding: 8px 22px;
+        font-size: var(--fontSize16);
     }
 }

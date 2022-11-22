@@ -1,0 +1,142 @@
+:root {
+    --motionTimingLinear: cubic-bezier(0, 0, 1, 1);
+    --motionTimingStandard: cubic-bezier(0.8, 0, 0.2, 1);
+    --motionTimingAccelerate: cubic-bezier(0.9, 0.1, 1, 0.2);
+    --motionTimingDecelerate: cubic-bezier(0.1, 0.9, 0.2, 1);
+    --motionDuration1: 100ms;
+    --motionDuration2: 200ms;
+    --motionDuration3: 300ms;
+    --motionDuration4: 400ms;
+    --animationFadeIn: "bit-animation-fadeIn" var(--motionDuration1) var(--motionTimingLinear);
+    --animationFadeOut: "bit-animation-fadeOut" var(--motionDuration1) var(--motionTimingLinear);
+    --animationScaleDownIn: "bit-animation-scaleDownIn" var(--motionDuration3) var(--motionTimingDecelerate);
+    --animationScaleDownOut: "bit-animation-scaleDownOut" var(--motionDuration3) var(--motionTimingDecelerate);
+    --animationSlideLeftOut: "bit-animation-slideLeftOut" var(--motionDuration1) var(--motionTimingAccelerate);
+    --animationSlideRightOut: "bit-animation-slideRightOut" var(--motionDuration1) var(--motionTimingAccelerate);
+    --animationSlideLeftIn: "bit-animation-slideLeftIn" var(--motionDuration1) var(--motionTimingDecelerate);
+    --animationSlideRightIn: "bit-animation-slideRightIn" var(--motionDuration1) var(--motionTimingDecelerate);
+    --animationSlideUpOut: "bit-animation-slideUpOut" var(--motionDuration1) var(--motionTimingAccelerate);
+    --animationSlideDownOut: "bit-animation-slideDownOut" var(--motionDuration1) var(--motionTimingAccelerate);
+    --animationSlideUpIn: "bit-animation-slideUpIn" var(--motionDuration1) var(--motionTimingDecelerate);
+    --animationSlideDownIn: "bit-animation-slideDownIn" var(--motionDuration1) var(--motionTimingDecelerate);
+}
+
+@keyframes bit-animation-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bit-animation-fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes bit-animation-scaleDownIn {
+    from {
+        transform: scale3d(1.15, 1.15, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes bit-animation-scaleDownOut {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        transform: scale3d(0.9, 0.9, 1);
+    }
+}
+
+@keyframes bit-animation-slideLeftOut {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-48px, 0, 0);
+    }
+}
+
+@keyframes bit-animation-slideRightOut {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(48px, 0, 0);
+    }
+}
+
+@keyframes bit-animation-slideLeftIn {
+    from {
+        transform: translate3d(48px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bit-animation-slideRightIn {
+    from {
+        transform: translate3d(-48px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bit-animation-slideUpOut {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, -48px, 0);
+    }
+}
+
+@keyframes bit-animation-slideDownOut {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 48px, 0);
+    }
+}
+
+@keyframes bit-animation-slideUpIn {
+    from {
+        transform: translate3d(0, 48px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bit-animation-slideDownIn {
+    from {
+        transform: translate3d(0, -48px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

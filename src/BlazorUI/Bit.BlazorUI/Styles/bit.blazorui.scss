@@ -2,5 +2,10 @@
 @import "Fluent/bit.blazorui.fluent.scss";
 @import "Material/bit.blazorui.material.scss";
 
+@import "Theme/theme.variables.colors.scss";
+@import "Theme/theme.variables.effects.scss";
+@import "Theme/theme.variables.fonts.scss";
+@import "Theme/theme.variables.layout.scss";
+@import "Theme/theme.variables.motion.scss";
+
 @import "general.scss";
-@import "variables.scss";
