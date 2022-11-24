@@ -2,15 +2,15 @@
 
 :root {
     //Breakpoints
-    --smallMin: em(320px);
-    --smallMax: em(479px);
-    --mediumMin: em(480px);
-    --mediumMax: em(639px);
-    --largeMin: em(640px);
-    --largeMax: em(1023px);
-    --extraLargeMin: em(1024px);
-    --extraLargeMax: em(1365px);
-    --extraExtraLargeMin: em(1366px);
-    --extraExtraLargeMax: em(1919px);
-    --extraExtraExtraLargeMin: em(1920px);
+    --smallMin: #{em(320px)};
+    --smallMax: #{em(479px)};
+    --mediumMin: #{em(480px)};
+    --mediumMax: #{em(639px)};
+    --largeMin: #{em(640px)};
+    --largeMax: #{em(1023px)};
+    --extraLargeMin: #{em(1024px)};
+    --extraLargeMax: #{em(1365px)};
+    --extraExtraLargeMin: #{em(1366px)};
+    --extraExtraLargeMax: #{em(1919px)};
+    --extraExtraExtraLargeMin: #{em(1920px)};
 }

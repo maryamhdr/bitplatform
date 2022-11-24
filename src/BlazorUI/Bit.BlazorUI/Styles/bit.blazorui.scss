@@ -1,13 +1,13 @@
-﻿@import "Cupertino/bit.blazorui.cupertino.scss";
-@import "Fluent/bit.blazorui.fluent.scss";
-@import "Material/bit.blazorui.material.scss";
-
-@import "Theme/variables.colors.scss";
+﻿@import "Theme/variables.colors.scss";
 @import "Theme/variables.effects.scss";
 @import "Theme/variables.layout.scss";
 @import "Theme/variables.motion.scss";
 @import "Theme/variables.typography.scss";
 
 @import "general.scss";
+
+@import "Cupertino/bit.blazorui.cupertino.scss";
+@import "Fluent/bit.blazorui.fluent.scss";
+@import "Material/bit.blazorui.material.scss";
 
 @import "../Components/Buttons/BitButton/BitButton.scss";
