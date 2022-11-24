@@ -1,4 +1,4 @@
-﻿@import "../../../Styles/Fluent/colors.fluent.scss", "../../../Styles/functions.scss";
+﻿@import "../../../Styles/functions.scss";
 
 .bit-btn {
     &.bit-btn-fluent {
@@ -15,39 +15,39 @@
     }
 
     &.bit-btn-disabled-fluent {
-        border: rem(1px) solid $Grey20;
-        color: $Grey90;
-        background: $Grey20;
+        border: rem(1px) solid var(--neutralLighter);
+        color: var(--neutralTertiary);
+        background: var(--neutralLighter);
         cursor: default;
         pointer-events: none;
     }
 
     &.standard {
-        border: rem(1px) solid $Grey110;
-        color: $Grey160;
-        background: $White;
+        border: rem(1px) solid var(--neutralSecondaryAlt);
+        color: var(--neutralPrimary);
+        background: var(--white);
 
         &:hover {
-            border-color: $Grey160;
-            background-color: $Grey20;
+            border-color: var(--neutralPrimary);
+            background-color: var(--neutralLighter);
         }
 
         &:active {
-            background-color: $Grey30;
+            background-color: var(--neutralLight);
         }
     }
 
     &.primary {
-        border: rem(1px) solid $ThemePrimary;
-        color: $White;
-        background: $ThemePrimary;
+        border: rem(1px) solid var(--themePrimary);
+        color: var(--white);
+        background: var(--themePrimary);
 
         &:hover {
-            background-color: $DarkAlt;
+            background-color: var(--themeDarkAlt);
         }
 
         &:active {
-            background-color: $Dark;
+            background-color: var(--themeDark);
         }
     }
 
