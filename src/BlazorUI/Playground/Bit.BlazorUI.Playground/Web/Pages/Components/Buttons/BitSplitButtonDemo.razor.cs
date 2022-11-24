@@ -6,10 +6,14 @@ namespace Bit.BlazorUI.Playground.Web.Pages.Components.Buttons;
 
 public partial class BitSplitButtonDemo
 {
-    private string example1SelectedItem;
-    private string example2SelectedItem;
-    private string example3SelectedItem;
-    private string example4SelectedItem;
+    private string BasicPrimarySelectedItem;
+    private string BasicStandardSelectedItem;
+    private string StickyPrimarySelectedItem;
+    private string StickyStandardSelectedItem;
+    private string DisabledPrimarySelectedItem;
+    private string DisabledStandardSelectedItem;
+    private string TemplatePrimarySelectedItem;
+    private string TemplateStandardSelectedItem;
 
     private List<BitSplitButtonItem> example1Items = new()
     {
@@ -279,52 +283,89 @@ public partial class BitSplitButtonDemo
 
     private readonly string example1HTMLCode = @"
 <BitSplitButton Items=""example1Items""
-                ButtonStyle=""BitButtonStyle.Standard""
-                OnClick=""(item) => example1SelectedItem = item.Text"" />
+                ButtonStyle=""BitButtonStyle.Primary""
+                OnClick=""(item) => BasicPrimarySelectedItem = item.Text"" />
 
 <BitSplitButton Items=""example1Items""
-                ButtonStyle=""BitButtonStyle.Primary""
-                OnClick=""(item) => example1SelectedItem = item.Text"" />
+                ButtonStyle=""BitButtonStyle.Standard""
+                OnClick=""(item) => BasicStandardSelectedItem = item.Text"" />
 
 <BitSplitButton Items=""example1Items"" IsEnabled=""false"" />
 ";
     private readonly string example2HTMLCode = @"
 <BitSplitButton Items=""example2Items""
-                ButtonStyle=""BitButtonStyle.Standard""
-                IsSticky=""true""
-                OnClick=""(item) => example2SelectedItem = item.Text"" />
-
-<BitSplitButton Items=""example2Items""
                 ButtonStyle=""BitButtonStyle.Primary""
                 IsSticky=""true""
-                OnClick=""(item) => example2SelectedItem = item.Text"" />
+                OnClick=""(item) => StickyPrimarySelectedItem = item.Text"" />
+
+<BitSplitButton Items=""example2Items""
+                ButtonStyle=""BitButtonStyle.Standard""
+                IsSticky=""true""
+                OnClick=""(item) => StickyStandardSelectedItem = item.Text"" />
 ";
     private readonly string example3HTMLCode = @"
 <BitSplitButton Items=""example3Items""
-                ButtonStyle=""BitButtonStyle.Standard""
-                OnClick=""(item) => example3SelectedItem = item.Text"" />
-
-<BitSplitButton Items=""example3Items""
                 ButtonStyle=""BitButtonStyle.Primary""
                 IsSticky=""true""
-                OnClick=""(item) => example3SelectedItem = item.Text"" />
+                OnClick=""(item) => DisabledPrimarySelectedItem = item.Text"" />
+
+<BitSplitButton Items=""example3Items""
+                ButtonStyle=""BitButtonStyle.Standard""
+                OnClick=""(item) => DisabledStandardSelectedItem = item.Text"" />
 ";
     private readonly string example4HTMLCode = @"
 <BitSplitButton Items=""example4Items""
-                ItemTemplate=""(item) => itemTemplate(item)""
-                ButtonStyle=""BitButtonStyle.Standard""
-                IsSticky=""true""
-                OnClick=""(item) => example4SelectedItem = item.Text"" />
-
-<BitSplitButton Items=""example4Items""
-                ItemTemplate=""(item) => itemTemplate(item)""
                 ButtonStyle=""BitButtonStyle.Primary""
                 IsSticky=""true""
-                OnClick=""(item) => example4SelectedItem = item.Text"" />
+                OnClick=""(item) => TemplatePrimarySelectedItem = item.Text"">
+    <ItemTemplate Context=""item"">
+        <div class=""item-template-box"">
+            <span style=""color: @(item.key == ""add-key"" ? ""green"" : item.key == ""edit-key"" ? ""yellow"" : ""red"");"">
+                @item.Text (@item.key)
+            </span>
+        </div>
+    </ItemTemplate>
+</BitSplitButton>
+
+<BitSplitButton Items=""example4Items""
+                ButtonStyle=""BitButtonStyle.Standard""
+                IsSticky=""true""
+                OnClick=""(item) => TemplateStandardSelectedItem = item.Text"">
+    <ItemTemplate Context=""item"">
+        @if (item.key == ""add-key"")
+        {
+            <div class=""item-template-box"">
+                <BitIcon IconName=""BitIconName.Add"" />
+                <span style=""color: green;"">
+                    @item.Text (@item.key)
+                </span>
+            </div>
+        }
+        else if (item.key == ""edit-key"")
+        {
+            <div class=""item-template-box"">
+                <BitIcon IconName=""BitIconName.Edit"" />
+                <span style=""color: yellow;"">
+                    @item.Text (@item.key)
+                </span>
+            </div>
+        }
+        else if (item.key == ""delete-key"")
+        {
+            <div class=""item-template-box"">
+                <BitIcon IconName=""BitIconName.Delete"" />
+                <span style=""color: red;"">
+                    @item.Text (@item.key)
+                </span>
+            </div>
+        }
+    </ItemTemplate>
+</BitSplitButton>
 ";
 
     private readonly string example1CSharpCode = @"
- private string example1SelectedItem;
+private string BasicPrimarySelectedItem;
+private string BasicStandardSelectedItem;
 
 private List<BitSplitButtonItem> example1Items = new()
 {
@@ -348,7 +389,8 @@ private List<BitSplitButtonItem> example1Items = new()
 };
 ";
     private readonly string example2CSharpCode = @"
-private string example2SelectedItem;
+private string StickyPrimarySelectedItem;
+private string StickyStandardSelectedItem;
 
 private List<BitSplitButtonItem> example2Items = new()
 {
@@ -373,7 +415,8 @@ private List<BitSplitButtonItem> example2Items = new()
 };
 ";
     private readonly string example3CSharpCode = @"
-private string example3SelectedItem;
+private string DisabledPrimarySelectedItem;
+private string DisabledStandardSelectedItem;
 
 private List<BitSplitButtonItem> example3Items = new()
 {
@@ -406,16 +449,8 @@ private List<BitSplitButtonItem> example3Items = new()
 };
 ";
     private readonly string example4CSharpCode = @"
-private string example4SelectedItem;
-
-private RenderFragment<BitSplitButtonItem> itemTemplate = (item) =>
-(
-    @<div class=""item-template-box"">
-        <span style=""color: @(item.key == ""add-key"" ? ""green"" : item.key == ""edit-key"" ? ""yellow"" : ""red"");"">
-            @item.Text (@item.key)
-        </span>
-    </div>
-);
+private string TemplatePrimarySelectedItem;
+private string TemplateStandardSelectedItem;
 
 private List<BitSplitButtonItem> example4Items = new()
 {
