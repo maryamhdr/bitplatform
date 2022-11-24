@@ -1,7 +1,7 @@
 ﻿@import "../../Styles/Fluent/colors.fluent.scss", "../../Styles/functions.scss";
 
 @mixin getLiBaseStyle($class) {
-    $color: $Grey120;
+    $color: $Grey130;
     border: rem(1px) solid $color;
 
     @if $class=="uploaded" {
@@ -9,7 +9,7 @@
     }
 
     @if $class=="paused" {
-        $color: $Primary;
+        $color: $ThemePrimary;
     }
 
     @if $class=="failed" {
@@ -59,7 +59,7 @@
         user-select: none;
 
         &:hover {
-            border-color: $Grey180;
+            border-color: $Grey130;
         }
 
         &:active {
@@ -158,7 +158,7 @@
 
         .progress-bar {
             height: rem(2px);
-            background-color: $Primary;
+            background-color: $ThemePrimary;
             transition: width 0.15s linear 0s;
         }
     }
@@ -173,7 +173,7 @@
 
         &:hover {
             i {
-                color: $Primary;
+                color: $ThemePrimary;
             }
         }
     }
@@ -185,7 +185,7 @@
     &.bit-upl-disabled-fluent {
         .bit-upl-lbl {
             border-color: $Grey60;
-            color: $Grey120;
+            color: $Grey130;
             background-color: $Grey20;
 
             &:hover {

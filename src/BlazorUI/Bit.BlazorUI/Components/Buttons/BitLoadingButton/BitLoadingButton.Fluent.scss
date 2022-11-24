@@ -45,7 +45,7 @@
     &.standard {
         color: $Grey160;
         background: $White;
-        border: 1px solid $GreyInputBorder;
+        border: 1px solid $Grey110;
 
         &:hover {
             background-color: $Grey20;
@@ -59,8 +59,8 @@
 
     &.primary {
         color: $White;
-        background: $Primary;
-        border: 1px solid $Primary;
+        background: $ThemePrimary;
+        border: 1px solid $ThemePrimary;
 
         &:hover {
             background-color: $DarkAlt;
@@ -163,13 +163,13 @@
         &.standard {
             .spinner {
                 border: rem(16px) solid $Grey60;
-                border-top: rem(16px) solid $Primary;
+                border-top: rem(16px) solid $ThemePrimary;
                 border-radius: 50%;
                 border-width: rem(1.5px);
             }
 
             .label {
-                color: $Primary;
+                color: $ThemePrimary;
             }
         }
     }

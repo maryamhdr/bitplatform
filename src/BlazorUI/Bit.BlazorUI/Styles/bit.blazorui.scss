@@ -2,10 +2,12 @@
 @import "Fluent/bit.blazorui.fluent.scss";
 @import "Material/bit.blazorui.material.scss";
 
-@import "Theme/theme.variables.colors.scss";
-@import "Theme/theme.variables.effects.scss";
-@import "Theme/theme.variables.fonts.scss";
-@import "Theme/theme.variables.layout.scss";
-@import "Theme/theme.variables.motion.scss";
+@import "Theme/variables.colors.scss";
+@import "Theme/variables.effects.scss";
+@import "Theme/variables.fonts.scss";
+@import "Theme/variables.layout.scss";
+@import "Theme/variables.motion.scss";
 
 @import "general.scss";
+
+@import "../Components/Buttons/BitButton/BitButton.scss";

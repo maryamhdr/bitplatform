@@ -251,23 +251,23 @@
             }
 
             .date-cell--selected-start {
-                background-color: $CyanBlue10;
+                background-color: $ThemePrimary;
                 color: $White;
                 border-radius: rem(8px) 0 0 rem(8px);
 
                 &:hover {
-                    background-color: $CyanBlue10;
+                    background-color: $ThemePrimary;
                     color: $White;
                 }
             }
 
             .date-cell--selected-end {
-                background-color: $CyanBlue10;
+                background-color: $ThemePrimary;
                 color: $White;
                 border-radius: 0 rem(8px) rem(8px) 0;
 
                 &:hover {
-                    background-color: $CyanBlue10;
+                    background-color: $ThemePrimary;
                     color: $White;
                 }
             }
@@ -478,11 +478,11 @@
 
                 .current-month {
                     color: $White;
-                    background-color: $Primary;
+                    background-color: $ThemePrimary;
 
                     &:hover {
                         color: $Grey160;
-                        background-color: $Primary;
+                        background-color: $ThemePrimary;
                     }
                 }
 
@@ -516,7 +516,7 @@
             overflow: visible;
 
             &:hover {
-                color: $CyanBlue10;
+                color: $ThemePrimary;
                 background-color: transparent;
                 cursor: pointer;
             }
@@ -593,7 +593,7 @@
         .dtrp-field-grp::after {
             position: absolute;
             inset: rem(-1px);
-            border: rem(2px) solid $Primary;
+            border: rem(2px) solid $ThemePrimary;
             border-radius: rem(2px);
             content: "";
             pointer-events: none;
@@ -603,7 +603,7 @@
     &.bit-dtrp-underlined-focused-fluent {
         .dtrp-wrapper::after {
             position: absolute;
-            border-bottom: rem(2px) solid $Primary;
+            border-bottom: rem(2px) solid $ThemePrimary;
             inset: rem(32px) 0;
             content: "";
             pointer-events: none;
@@ -658,7 +658,7 @@
 .bit-txt-focused-fluent {
     > div {
         > div {
-            border-color: $Primary;
+            border-color: $ThemePrimary;
         }
     }
 }

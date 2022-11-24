@@ -131,7 +131,7 @@
     padding: 0 rem(4px);
     outline: transparent;
     border: none;
-    color: $Primary;
+    color: $ThemePrimary;
     background-color: transparent;
     cursor: pointer;
 
@@ -147,7 +147,7 @@
     }
 
     .bit-icon {
-        color: $Primary;
+        color: $ThemePrimary;
     }
 }
 
@@ -188,7 +188,7 @@
     .bit-txt-field-grp::after {
         position: absolute;
         inset: rem(-1px);
-        border: rem(2px) solid $Primary;
+        border: rem(2px) solid $ThemePrimary;
         border-radius: rem(2px);
         content: "";
         pointer-events: none;
@@ -203,7 +203,7 @@
     .bit-txt-wrapper::after {
         position: absolute;
         inset: rem(-1px);
-        border-bottom: rem(2px) solid $Primary;
+        border-bottom: rem(2px) solid $ThemePrimary;
         content: "";
         pointer-events: none;
     }

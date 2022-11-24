@@ -32,7 +32,7 @@
         position: absolute;
         width: 0;
         height: inherit;
-        background-color: $Primary;
+        background-color: $ThemePrimary;
         transition: width 0.15s linear 0s;
     }
 
@@ -49,7 +49,7 @@
         width: 0px;
         min-width: 33%;
         transition: width 0.3s ease 0s;
-        background: linear-gradient(to right, $Grey30 0%, $Primary 50%, $Grey30 100%);
+        background: linear-gradient(to right, $Grey30 0%, $ThemePrimary 50%, $Grey30 100%);
         animation: 3s ease 0s infinite normal none running pi-bar-animation;
     }
 }

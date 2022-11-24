@@ -6,7 +6,7 @@
         -webkit-font-smoothing: antialiased;
         font-size: inherit;
         font-weight: inherit;
-        color: $Primary;
+        color: $ThemePrimary;
         outline: none;
         text-decoration: none;
 
@@ -20,7 +20,7 @@
     }
 
     > button {
-        color: $Primary;
+        color: $ThemePrimary;
         font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
         font-size: inherit;
         background: none transparent;

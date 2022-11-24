@@ -350,10 +350,10 @@
 
     .bit-rbli-checked {
         .bit-rbli-lbl {
-            border-color: $Primary;
+            border-color: $ThemePrimary;
 
             &:before {
-                border-color: $Primary;
+                border-color: $ThemePrimary;
             }
 
             &:after {
@@ -361,8 +361,8 @@
                 left: rem(5px);
                 width: rem(10px);
                 height: rem(10px);
-                border: rem(5px) solid $Primary;
-                background-color: $Primary;
+                border: rem(5px) solid $ThemePrimary;
+                background-color: $ThemePrimary;
             }
 
             &:hover {
@@ -378,10 +378,10 @@
         }
 
         .bit-rbli-lbl-with-img {
-            border-color: $Primary;
+            border-color: $ThemePrimary;
 
             &:before {
-                border-color: $Primary;
+                border-color: $ThemePrimary;
                 opacity: 1;
             }
 
@@ -391,8 +391,8 @@
                 right: rem(8px);
                 width: rem(10px);
                 height: rem(10px);
-                border: rem(5px) solid $Primary;
-                background-color: $Primary;
+                border: rem(5px) solid $ThemePrimary;
+                background-color: $ThemePrimary;
             }
 
             &:hover {

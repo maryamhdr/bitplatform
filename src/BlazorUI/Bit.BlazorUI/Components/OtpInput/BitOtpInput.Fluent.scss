@@ -90,7 +90,7 @@
 
         &:focus {
             outline: none;
-            border: rem(2px) solid $Primary;
+            border: rem(2px) solid $ThemePrimary;
         }
 
         &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {

@@ -23,7 +23,7 @@
         color: $Grey160;
 
         &:hover {
-            color: $Primary;
+            color: $ThemePrimary;
         }
 
         &:active {
@@ -99,7 +99,7 @@
             color: $Black;
 
             &:after {
-                border-left: rem(2px) solid $Primary;
+                border-left: rem(2px) solid $ThemePrimary;
                 content: "";
                 position: absolute;
                 inset: 0;
@@ -142,7 +142,7 @@
             line-height: rem(16px);
             text-align: center;
             flex-shrink: 0;
-            color: $Primary;
+            color: $ThemePrimary;
         }
 
         .link-txt {

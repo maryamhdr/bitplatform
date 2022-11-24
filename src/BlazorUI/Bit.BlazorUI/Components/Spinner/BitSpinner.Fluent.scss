@@ -19,13 +19,13 @@
             animation: bit-spn-fluent 1.3s linear infinite;
             animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);
             border: rem(16px) solid $Grey60;
-            border-top: rem(16px) solid $Primary;
+            border-top: rem(16px) solid $ThemePrimary;
             border-radius: 50%;
             border-width: rem(1.5px);
         }
 
         &:nth-child(2) {
-            color: $Primary;
+            color: $ThemePrimary;
             font-size: rem(12px);
             margin: rem(2px) rem(8px);
             text-align: center;

@@ -1,7 +1,7 @@
 ﻿@import "../../Styles/Fluent/colors.fluent.scss", "../../Styles/functions.scss";
 
 @mixin getFocusedStyle($fixedIcon: false, $hasValue: false) {
-    border: 2px solid $Primary;
+    border: 2px solid $ThemePrimary;
 
     @if $hasValue == true {
         & > div:last-child {

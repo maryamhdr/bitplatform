@@ -57,9 +57,9 @@
         &.standard {
             color: $Grey160;
             background-color: $White;
-            border-top: 1px solid $GreyInputBorder;
-            border-left: 1px solid $GreyInputBorder;
-            border-bottom: 1px solid $GreyInputBorder;
+            border-top: 1px solid $Grey110;
+            border-left: 1px solid $Grey110;
+            border-bottom: 1px solid $Grey110;
 
             &:hover {
                 background-color: $Grey20;
@@ -68,10 +68,10 @@
 
         &.primary {
             color: $White;
-            background-color: $Primary;
-            border-top: 1px solid $Primary;
-            border-left: 1px solid $Primary;
-            border-bottom: 1px solid $Primary;
+            background-color: $ThemePrimary;
+            border-top: 1px solid $ThemePrimary;
+            border-left: 1px solid $ThemePrimary;
+            border-bottom: 1px solid $ThemePrimary;
 
             &:hover {
                 background-color: $DarkAlt;
@@ -107,9 +107,9 @@
         &.standard {
             color: $Grey160;
             background-color: $White;
-            border-top: 1px solid $GreyInputBorder;
-            border-right: 1px solid $GreyInputBorder;
-            border-bottom: 1px solid $GreyInputBorder;
+            border-top: 1px solid $Grey110;
+            border-right: 1px solid $Grey110;
+            border-bottom: 1px solid $Grey110;
 
             &:hover {
                 background-color: $Grey20;
@@ -118,10 +118,10 @@
 
         &.primary {
             color: $White;
-            background-color: $Primary;
-            border-top: 1px solid $Primary;
-            border-right: 1px solid $Primary;
-            border-bottom: 1px solid $Primary;
+            background-color: $ThemePrimary;
+            border-top: 1px solid $ThemePrimary;
+            border-right: 1px solid $ThemePrimary;
+            border-bottom: 1px solid $ThemePrimary;
 
             &:hover {
                 background-color: $DarkAlt;
@@ -131,9 +131,9 @@
         &.disabled {
             color: $Grey160;
             background-color: $White;
-            border-top: 1px solid $GreyInputBorder;
-            border-right: 1px solid $GreyInputBorder;
-            border-bottom: 1px solid $GreyInputBorder;
+            border-top: 1px solid $Grey110;
+            border-right: 1px solid $Grey110;
+            border-bottom: 1px solid $Grey110;
 
             &:hover {
                 background-color: $Grey20;
@@ -147,14 +147,14 @@
         right: rem(32px);
         top: rem(8px);
         bottom: rem(8px);
-        background-color: $GreyInputBorder;
+        background-color: $Grey110;
 
         &.primary {
             background-color: $White;
         }
 
         &.disabled {
-            background-color: $GreyInputBorder;
+            background-color: $Grey110;
         }
     }
 
@@ -200,7 +200,7 @@
         color: $Grey160;
 
         i {
-            color: $Primary;
+            color: $ThemePrimary;
             margin: 0 rem(4px);
         }
 

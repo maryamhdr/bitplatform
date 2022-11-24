@@ -9,7 +9,7 @@
         padding: 0;
         box-sizing: border-box;
         position: relative;
-        color: $CyanBlue10;
+        color: $ThemePrimary;
         white-space: nowrap;
     }
 }
@@ -123,7 +123,7 @@
 
 .bit-pvt-tabs-fluent {
     .bit-pvt-itm-selcted-fluent {
-        background-color: $CyanBlue10;
+        background-color: $ThemePrimary;
         color: $White;
         font-weight: 400;
     }
@@ -151,7 +151,7 @@
         }
         /* Handle */
         &::-webkit-scrollbar-thumb {
-            background: $CyanBlue10;
+            background: $ThemePrimary;
             border-radius: rem(10px);
         }
         /* Handle on hover */

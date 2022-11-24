@@ -44,8 +44,8 @@
 
     &.primary {
         color: $White;
-        background: $Primary;
-        border: 1px solid $Primary;
+        background: $ThemePrimary;
+        border: 1px solid $ThemePrimary;
 
         &:hover {
             background-color: $DarkAlt;
@@ -59,7 +59,7 @@
     &.standard {
         color: $Grey160;
         background: $White;
-        border: 1px solid $GreyInputBorder;
+        border: 1px solid $Grey110;
 
         &:hover {
             background-color: $Grey20;

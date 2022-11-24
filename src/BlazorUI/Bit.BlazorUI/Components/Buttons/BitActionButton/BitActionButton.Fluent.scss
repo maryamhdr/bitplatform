@@ -54,12 +54,12 @@
         }
 
         &:hover {
-            color: $Primary;
+            color: $ThemePrimary;
 
             & > span {
                 &:first-child {
                     & i {
-                        color: $Primary;
+                        color: $ThemePrimary;
                     }
                 }
             }

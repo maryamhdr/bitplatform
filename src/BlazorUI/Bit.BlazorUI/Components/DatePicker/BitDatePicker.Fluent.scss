@@ -239,7 +239,7 @@
                     border-radius: 50%;
                     font-weight: 600;
                     color: $White;
-                    background-color: $CyanBlue10;
+                    background-color: $ThemePrimary;
                 }
             }
 
@@ -447,11 +447,11 @@
 
                 .current-month {
                     color: $White;
-                    background-color: $Primary;
+                    background-color: $ThemePrimary;
 
                     &:hover {
                         color: $Grey160;
-                        background-color: $Primary;
+                        background-color: $ThemePrimary;
                     }
                 }
 
@@ -485,7 +485,7 @@
             overflow: visible;
 
             &:hover {
-                color: $CyanBlue10;
+                color: $ThemePrimary;
                 background-color: transparent;
                 cursor: pointer;
             }
@@ -562,7 +562,7 @@
         .dtp-field-grp::after {
             position: absolute;
             inset: rem(-1px);
-            border: rem(2px) solid $Primary;
+            border: rem(2px) solid $ThemePrimary;
             border-radius: rem(2px);
             content: "";
             pointer-events: none;
@@ -572,7 +572,7 @@
     &.bit-dtp-underlined-focused-fluent {
         .dtp-wrapper::after {
             position: absolute;
-            border-bottom: rem(2px) solid $Primary;
+            border-bottom: rem(2px) solid $ThemePrimary;
             inset: rem(32px) 0;
             content: "";
             pointer-events: none;
@@ -617,7 +617,7 @@
 .bit-txt-focused-fluent {
     > div {
         > div {
-            border-color: $Primary;
+            border-color: $ThemePrimary;
         }
     }
 }

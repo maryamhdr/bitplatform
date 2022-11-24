@@ -79,8 +79,8 @@
 
     &.bit-chb-checked-fluent {
         .bit-chb-checkbox {
-            border-color: $Primary;
-            background-color: $Primary;
+            border-color: $ThemePrimary;
+            background-color: $ThemePrimary;
         }
 
         .bit-chb-checkmark {
@@ -98,7 +98,7 @@
 
     &.bit-chb-indeterminate-fluent {
         .bit-chb-checkbox {
-            border-color: $Primary;
+            border-color: $ThemePrimary;
             background-color: $White;
         }
 
@@ -107,7 +107,7 @@
             width: rem(10px);
             height: rem(10px);
             border-radius: rem(3px);
-            background-color: $Primary;
+            background-color: $ThemePrimary;
             opacity: 1;
 
             &:before {
@@ -169,7 +169,7 @@
         &.bit-chb-fluent:hover {
             .bit-chb-checkmark {
                 opacity: 1;
-                color: $Grey120;
+                color: $Grey130;
             }
         }
 

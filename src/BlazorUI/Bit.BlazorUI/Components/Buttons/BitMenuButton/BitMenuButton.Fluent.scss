@@ -28,7 +28,7 @@
 
     &.standard {
         background-color: $White;
-        border: 1px solid $GreyInputBorder;
+        border: 1px solid $Grey110;
 
         &:hover {
             background-color: $Grey20;
@@ -40,8 +40,8 @@
     }
 
     &.primary {
-        background-color: $Primary;
-        border: 1px solid $Primary;
+        background-color: $ThemePrimary;
+        border: 1px solid $ThemePrimary;
 
         &:hover {
             background-color: $DarkAlt;
@@ -122,7 +122,7 @@
         color: $Grey160;
 
         i {
-            color: $Primary;
+            color: $ThemePrimary;
             margin: 0 rem(4px);
         }
 

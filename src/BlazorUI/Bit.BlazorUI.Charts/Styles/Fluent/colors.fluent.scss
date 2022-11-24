@@ -1,7 +1,8 @@
 ﻿// Theme
-$Primary: #0078D4;
+$ThemePrimary: #0078D4;
 $DarkAlt: #106EBE;
 $Dark: #005A9E;
+$ThemeDarker: #004578;
 $ThemeLighter: #DEECF9;
 
 // Neutral colors
@@ -11,25 +12,18 @@ $Grey10: #FAF9F8;
 $Grey20: #F3F2F1;
 $Grey30: #EDEBE9;
 $Grey50: #D2D0CE;
-$Grey90: #A19F9D;
 $Grey60: #C8C6C4;
-$Grey120: #797775;
+$Grey90: #A19F9D;
+$Grey110: #8A8886;
 $Grey130: #605E5C;
 $Grey160: #323130;
-$Grey180: #1B1A19;
 $Grey190: #201F1E;
-$Grey200: #1b1a19;
-$GreyInputBorder: #8A8886;
+$Grey110: #8A8886;
 
 // Shared
 $Red20: #A4262C;
-$CyanBlue10: #0078D4;
 $BlizzardBlue: #c7e0f4;
 $PinkRed10: #750b1c;
-
-// Theme Slots
-$ThemeDarker: #004578;
-$ThemePrimary: #0078d4;
 
 //Error & Status
 $Green60: #DFF6DD;
@@ -45,9 +39,50 @@ $Yellow20: #fff4ce;
 
 //Presence
 $Magenta: #b4009e;
-$Gray110: #8A8886;
 $DoNotDisturbRed: #C50F1F;
 $OnlineGreen: #6bb700;
 $BusyRed: #C43148;
 $Orange10: #ffaa44;
 
+:root {
+    //Fluent palette
+    //CommunicationColors
+    --themeDarker: #004578;
+    --themeDark: #005a9e;
+    --themeDarkAlt: #106ebe;
+    --themePrimary: #0078d4;
+    --themeSecondary: #2b88d8;
+    --themeLight: #c7e0f4;
+    --themeLighter: #deecf9;
+    --themeLighterAlt: #eff6fc;
+    //NeutralColors
+    --black: #000000;
+    --neutralDark: #201f1e;
+    --neutralPrimary: #323130;
+    --neutralPrimaryAlt: #3b3a39;
+    --neutralSecondary: #605e5c;
+    --neutralSecondaryAlt: #8a8886;
+    --neutralTertiary: #a19f9d;
+    --neutralTertiaryAlt: #c8c6c4;
+    --neutralQuaternary: #d2d0ce;
+    --neutralQuaternaryAlt: #e1dfdd;
+    --neutralLight: #edebe9;
+    --neutralLighter: #f3f2f1;
+    --neutralLighterAlt: #faf9f8;
+    --white: #ffffff;
+    //SharedColors
+    --yellowLight: #fff4ce;
+    --orangeDark: #a80000;
+    --orange: #d83b01;
+    --orangeLight: #ffaa44;
+    --orangeLighter: #fed9cc;
+    --redDarker: #750b1c;
+    --redDark: #a4262c;
+    --redLighter: #fde7e9;
+    --magenta: #b4009e;
+    --green: #107c10;
+    --greenLight: #6bb700;
+    --greenLighter: #dff6dd;
+    --pinkDarker: #c50f1f;
+    --pinkDark: #c43148;
+}
