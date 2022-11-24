@@ -1,10 +1,8 @@
-﻿@import "../../../Styles/functions.scss";
-
-.bit-btn {
+﻿.bit-btn {
     position: relative;
     display: inline-block;
-    min-width: rem(80px);
-    height: rem(32px);
+    min-width: 80px;
+    height: 32px;
     border-radius: var(--roundedCorner2);
     outline: transparent;
     box-sizing: border-box;
@@ -18,7 +16,7 @@
     user-select: none;
 
     &.bit-btn-disabled {
-        border: rem(1px) solid var(--neutralLighter);
+        border: 1px solid var(--neutralLighter);
         color: var(--neutralTertiary);
         background-color: var(--neutralLighter);
         cursor: default;
@@ -26,7 +24,7 @@
     }
 
     &.standard {
-        border: rem(1px) solid var(--neutralSecondaryAlt);
+        border: 1px solid var(--neutralSecondaryAlt);
         color: var(--neutralPrimary);
         font-weight: var(--fontWeightSemiBold);
         background-color: var(--white);
@@ -42,7 +40,7 @@
     }
 
     &.primary {
-        border: rem(1px) solid var(--themePrimary);
+        border: 1px solid var(--themePrimary);
         color: var(--white);
         font-weight: var(--fontWeightSemiBold);
         background-color: var(--themePrimary);
