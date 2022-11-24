@@ -1,23 +1,21 @@
 ﻿@import "../../../Styles/functions.scss";
 
 .bit-btn {
-    &.bit-btn-fluent {
-        position: relative;
-        min-width: rem(64px);
-        border-radius: rem(2px);
-        box-sizing: border-box;
-        font-weight: 500;
-        text-align: center;
-        line-height: 1.75;
-        text-decoration: none;
-        font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-        cursor: pointer;
-    }
+    position: relative;
+    min-width: rem(64px);
+    border-radius: rem(2px);
+    box-sizing: border-box;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.75;
+    text-decoration: none;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    cursor: pointer;
 
-    &.bit-btn-disabled-fluent {
+    &.bit-btn-disabled {
         border: rem(1px) solid var(--neutralLighter);
         color: var(--neutralTertiary);
-        background: var(--neutralLighter);
+        background-color: var(--neutralLighter);
         cursor: default;
         pointer-events: none;
     }
@@ -25,7 +23,7 @@
     &.standard {
         border: rem(1px) solid var(--neutralSecondaryAlt);
         color: var(--neutralPrimary);
-        background: var(--white);
+        background-color: var(--white);
 
         &:hover {
             border-color: var(--neutralPrimary);
@@ -40,7 +38,7 @@
     &.primary {
         border: rem(1px) solid var(--themePrimary);
         color: var(--white);
-        background: var(--themePrimary);
+        background-color: var(--themePrimary);
 
         &:hover {
             background-color: var(--themeDarkAlt);
@@ -51,17 +49,17 @@
         }
     }
 
-    &.bit-btn-sm-fluent {
+    &.bit-btn-sm {
         padding: rem(4px) rem(10px);
         font-size: rem(13px);
     }
 
-    &.bit-btn-md-fluent {
+    &.bit-btn-md {
         padding: rem(6px) rem(16px);
         font-size: rem(14px);
     }
 
-    &.bit-btn-lg-fluent {
+    &.bit-btn-lg {
         padding: rem(8px) rem(22px);
         font-size: rem(15px);
     }
