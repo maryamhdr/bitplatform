@@ -1,0 +1,33 @@
+@import "../functions.scss";
+
+:root {
+    --fontFamily: "Segoe UI";
+    // Standard font sizes.
+    --fontSizeXSmall: rem(10px);
+    --fontSizeSmall: rem(12px);
+    --fontSizeMedium: rem(14px);
+    --fontSizeMediumPlus: rem(16px);
+    --fontSizeIcon: rem(16px);
+    --fontSizeLarge: rem(18px);
+    --fontSizeXLarge: rem(20px);
+    --fontSizeXLargePlus: rem(24px);
+    --fontSizeXXLarge: rem(28px);
+    --fontSizeXXLargePlus: rem(32px);
+    --fontSizeSuperLarge: rem(42px);
+    --fontSizeMega: rem(68px);
+    // Standard font weights.
+    --fontWeightThin: 100;
+    --fontWeightExtraLight: 200;
+    --fontWeightLight: 300;
+    --fontWeightRegular: 400;
+    --fontWeightMedium: 500;
+    --fontWeightSemiBold: 600;
+    --fontWeightBold: 700;
+    --fontWeightExtraBold: 800;
+    --fontWeightBlack: 900;
+    // Standard Icon Sizes.
+    --iconFontSizeXSmall: rem(10px);
+    --iconFontSizeSmall: rem(12px);
+    --iconFontSizeMedium: rem(16px);
+    --iconFontSizeLarge: rem(20px);
+}
